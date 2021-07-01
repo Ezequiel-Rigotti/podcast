@@ -1,0 +1,736 @@
+
+/*---------------------------MEDIAS QUERIES PODCAST-----------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------
+----------------------------MEDIA MAX 899PX------------------------------------
+-------------------------------------------------------------------------------*/
+
+
+/*---------------------SECCION CABECERA--------------------------------*/
+
+@media screen and (max-width: 899px) {
+
+    /*contenedor principa de la cabecera - nav y logo*/
+    .nav-escritorio {
+        visibility: hidden;
+    }
+
+    /* Estilo para el logo bd*/
+    .cabecera img {
+        width: 1.5rem;
+        height: 1.5rem;
+        float: left;
+        margin-left: 5%;
+        margin-top: 0.62rem;
+    }
+
+    /*------------------- MENU HAMBURGUESA--------------------------*/
+
+    /*contenedor de menu hamburgesa y cruz para desplegar o cerrar menu mobile*/
+    .menu-mobile-ham {
+        width: 0.875rem;
+        height: 0.875rem;
+        margin-top: 1.13rem;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    /*mantiene el menu escondido si no se presiona menu hamburguesa*/
+    .menu-mobile {
+        width: 0%;
+    }
+
+    /*despliega menu hamburguesa al presionar menu hamburguesa*/
+    #hamburguesa:checked~.menu-mobile {
+        width: 100%;
+    }
+
+    /*---------------Seccion Principal---------HELLO WORLD--------*/
+
+    .hello {
+        font-size: 2.25rem;
+        /* para convertir px a rem 64/16=4rem ya que 1rem=16px*/
+        margin-left: 5%;
+        margin-top: 3.125%;
+        margin-right: 25.62%;
+        line-height: 2.62rem;
+    }
+
+    .punto-azul {
+        font-size: 2.25rem;
+        color: #060A24;
+    }
+
+    .desc-sec-pri {
+        visibility: hidden;
+        display: none;
+    }
+
+    .desc-mobile {
+        visibility: visible;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.875rem;
+        color: #060A24;
+        line-height: 1.37rem;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: inline-block;
+    }
+
+    .boton-1 {
+        width: 90%;
+        height: 3rem;
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-top: 11.25%;
+        display: inline-block;
+    }
+
+   /*--------------SECCION EPISODIOS ----------------------*/
+
+    .caja-episodio {
+        width: 100%;
+        height: auto;
+        margin-top: 7.5%;
+    }
+    .mascara-diagonal-1 {
+        clip-path: polygon(100% 0%, 100% 97%, 0% 100%, 0% 3%);
+    }
+
+    .caja-episodio span {
+        margin-top: 20%;
+        margin-left: 5%;
+        Font-size: 2.25rem;
+        line-height: 2.62rem;
+    }
+
+    .box-podcast {
+        width: 100%;
+        height: 55rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.43%;
+        justify-content: start;
+        padding-left: 11px;
+        padding-right: 11px;
+
+    }
+
+    .box-podcast iframe {
+        width: 100%;
+        height: 9.5rem;
+        margin-bottom: 0px;
+    }
+
+
+    /*----------------------------------SECCION NOSOTROS*--------------------------/
+
+/*CONTENEDOR SECCION NOSOTROS*/
+
+    .nosotros {
+        width: 100%;
+        height: 850px;
+        /*850px*/
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .box-phone {
+        width: 360px;
+        height: 328px;
+        position: relative;
+        top: 0;
+        margin: auto;
+        margin-bottom: 0;
+    }
+
+
+    .nosotros .box-nos-textos {
+        width: 100%;
+        height: auto;
+        /*346px*/
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.68rem;
+    }
+
+
+
+    /*Estilos para foto phone de seccion nosotros*/
+
+    .nosotros .phone {
+        width: 100%;
+        height: auto;
+        /*32.44rem;/*519px*/
+        position: relative;
+        top: -13.5rem;
+    }
+
+
+    /*ESTILOS TITULO "DE DONDE VENIMOS" seccion nosotros phone*/
+    .nosotros .nos-titulo {
+        width: 90%;
+        /*288px*/
+        height: auto;
+        font-size: 2.25rem;
+        /*26px*/
+        line-height: 2.62rem;
+        /*42px*/
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 1.6rem;
+
+    }
+
+    /*ESTILOS TEXTO DESCRIPCION SECCION NOSOTROS */
+
+    .nosotros .nos-desc {
+        width: 90%;
+        height: auto;
+        /*254px*/
+        font-size: 0.875rem;
+        line-height: 1.37rem;
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 1rem;
+        padding-top: 0.5rem;
+
+    }
+
+
+
+    /*-------------------SECCION INVITADOS/AS-----------------------------------*/
+
+    /*CONTENEDOR PRICIPAL SECCION INVITADOS*/
+
+    .invitados {
+        width: 100%;
+        height: auto;
+        /*51.63rem;*/
+
+    }
+
+    /*ESTILOS TITULO SECCION INVITADOS*/
+    .invitados p {
+        width: 90%;
+        /*288px*/
+        height: auto;
+        /*84px*/
+        font-size: 2.25rem;
+        /*36px*/
+        line-height: 2.62rem;
+        /* 42px;*/
+        margin: 0;
+        margin-left: 5%;
+        /*16px*/
+        margin-top: 1.68rem;
+
+    }
+
+    /*CONTENEDOR FOTOS DE INVITADOS/AS*/
+
+    .invitados .fotos-invitados {
+        width: 100%;
+        height: auto;
+        /*1458px--> 243*6 fotos*/
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.875rem;
+    }
+
+    .invitados img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /*--------------------------------------SECCION TEMAS--------------------------------*/
+
+    
+    /*TITUTLO SECCION TEMAS -ESTILOS-*/
+    .temas {
+        width: 100%;
+        height: 63.63rem;
+    }
+
+    .titulo-top {
+        width: 100%;
+        /*288px*/
+        height: 5.25rem;
+        margin-top: 3rem;
+        margin-left: 5%;
+        font-size: 2.25rem;
+    }
+
+    .box-topicos {
+        width: 100%;
+        height: 45.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    /*CONTENEDOR DE LOS ICONOS*/
+    .box-iconos {
+        width: auto;
+        height: 12.125rem;
+        margin-top: 2.25rem;
+    }
+
+
+    /*TAMAÑOS DE LOS ICONOS*/
+    .box-iconos img {
+        width: 104px;
+        height: 104px;
+        display: flex;
+        margin-left: auto;
+        /*centre los iconos*/
+        margin-right: auto;
+        /*centre los iconos*/
+    }
+
+    /*ESTILO DE LOS P QUE CONTIENEN LAS DESCRIPCIONES DE LOS ICONOS*/
+    .box-topicos .box-texto-imagen {
+        width: 288px;
+        height: 64px;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    /*-------------------*SECCION NOVEDADES*------------------------------*/
+
+
+    /*ESTILOS A CONTENEDOR GENERAL DE LA SECCION NOVEDADES*/
+
+    .novedades {
+        height: 21.31rem;
+    }
+
+    /*MASCARA AZUL PARA HACER LA UNICA DIAGONAL DE LA SECCION NOVEDADES*/
+    .mascara-diagonal-2 {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 15%);
+    }
+
+    .novedades div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .novedades span {
+        width: 90%;
+        height: auto;
+        font-size: 2.25rem;
+        margin-top: 4rem;
+        /*14.78%;*/
+    }
+
+
+    .novedades .boton-2 {
+        height: 3rem;
+        width: 90%;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.375rem;
+        margin-bottom: 4.18rem;
+    }
+
+    /*------------------Footer-----------------------------------*/
+
+    /*contenedor principal*/
+    .pie-pagina {
+        height: 7.56rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*CONTENDOR  DEL SPAN - TEXTO DEL FOOTER*/
+    .texto-pie {
+        width: 75%;
+        height: 1.375rem;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Estilo PARA TEXTO DE FOOTER*/
+    .pie-pagina span {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+
+    /*CONTENEDOR DE ICONOS SOCIALES*/
+    .box-iconos-footer {
+        width: 71%;
+        height: 1.75rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*ESTILO DE cada icono TAMAÑO Y COLOR*/
+    .box-iconos-footer i {
+        width: 1rem;
+        height: 1.75rem;
+    }
+
+
+}
+
+/*-----------------------------------------------------------------------------
+----------------------------MEDIA DE 900PX A 1069PX----------------------------
+-------------------------------------------------------------------------------*/
+
+@media screen and (min-width:900px) and (max-width: 1069px) {
+
+
+    /* Estilo para el logo bd*/
+    .cabecera img {
+        width: 2.05rem;
+        height: 2.05rem;
+        margin-top: 1.175rem;
+
+    }
+
+
+    /*Estilos para la lista desordenada + ubicacion derecha en la cabecera*/
+    .nav-escritorio ul li {
+        font-size: 0.95rem;
+        /*1rem=16px*/
+        margin-top: 1.425rem;
+        /* 1.625rem;*/
+        margin-left: 2.8rem;
+    }
+
+
+    /*---------------Seccion Principal---------HELLO WORLD--------*/
+
+    .hello {
+        font-size: 3.8rem;
+        margin-left: 6.94%;
+    }
+
+    .punto-azul {
+        font-size: 3.8rem;
+    }
+
+    .desc-sec-pri {
+        font-size: 0.8rem;
+        margin-left: 6.94%;
+
+    }
+
+    .boton-1 {
+        width: 13.93rem;
+        height: 3.3rem;
+        font-size: 1.125rem;
+        margin-left: 6.94%;
+    }
+
+    /*--------------Seccion Episodios----------------------*/
+
+    .caja-episodio {
+
+        width: 100%;
+        height: 41rem;
+        position: relative;
+
+    }
+
+    .mascara-diagonal-1 {
+        clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
+    }
+
+    .caja-episodio span {
+        font-size: 2.8rem;
+        margin-top: 5rem;
+        margin-left: 6.94%;
+        margin-bottom: 1rem;
+    }
+
+    .box-podcast {
+        width: 100%;
+        height: 25rem;
+        position: relative;
+        top: 0;
+    }
+
+    .box-podcast iframe {
+        width: 26rem;
+        height: 12rem;
+        margin-left: 1.56%;
+        margin-right: 1.56%;
+        margin-top: 1.56%;
+        margin-bottom: 1.56%;
+    }
+
+    /*----------------------SECCION NOSOTROS------------------*/
+
+    .nosotros {
+        height: 30rem;
+    }
+
+    .box-phone {
+        width: 25rem;
+        height: 34rem;
+        position: relative;
+        top: -18%;
+        margin-left: 4%;
+    }
+
+    /*contenedor de textos*/
+    .nosotros .box-nos-textos {
+        width: 29rem;
+        height: 19rem;
+        margin-top: 30px;
+    }
+
+    /*Estilos para foto phone de seccion nosotros*/
+
+    .nosotros .phone {
+        width: 400px;
+        height: 543px;
+    }
+
+
+    .nosotros .box-nos-textos{
+        width: auto;
+    }
+
+    /*ESTILOS TITULO "DE DONDE VENIMOS" seccion nosotros phone*/
+    .nosotros .nos-titulo {
+        width: auto;
+        height: auto;
+        font-size: 2.8rem;
+        margin-bottom: 0;
+        margin-left: 0;
+
+    }
+
+    /*ESTILOS TEXTO DESCRIPCION SECCION NOSOTROS */
+
+    .nosotros .nos-desc {
+        width: auto;
+        height: auto;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin-left: 0;
+    }
+
+    /*-------------------SECCION INVITADOS/AS-----------------------------------*/
+
+    /*CONTENEDOR PRICIPAL SECCION INVITADOS*/
+
+    .invitados {
+        width: 100%;
+        height: auto;
+        /*51.63rem;*/
+    }
+
+    /*ESTILOS TITULO SECCION INVITADOS*/
+    .invitados p {
+        font-size: 2.8rem;
+        margin-left: 6.94%;
+    }
+
+
+    /*CONTENEDOR FOTOS DE INVITADOS/AS*/
+
+    .invitados .fotos-invitados {
+      height: auto;
+    }
+
+    .invitados img {
+        height: auto;
+    }
+
+
+
+    /*--------------------------SECCION TEMAS----------------*/
+
+    /*CONTENEDOR PRICIPAL SECCCION TEMAS*/
+    .temas {
+        height: 20.23rem;
+    }
+
+    /*TITUTLO SECCION TEMAS -ESTILOS-*/
+
+    .titulo-top {
+        width: 80%;
+        height: auto;
+        margin-left: 6.94%;
+        margin-top: 2.5rem;
+        font-size: 2.8rem;
+    }
+
+    .box-topicos {
+        width: 100%;
+        height: auto;
+        margin-top: 3.2rem;
+    }
+
+    /*CONTENEDOR DE LOS ICONOS*/
+    .box-iconos {
+        width: 10.15rem;
+        height: 5.78rem;
+        margin-left: 2.5rem;
+    }
+
+
+    /*TAMAÑOS DE LOS ICONOS*/
+    .box-iconos img {
+        width: 65px;
+        height: 65px;
+        margin-left: 3rem;
+    }
+
+    /*ESTILO DE LOS P QUE CONTIENEN LAS DESCRIPCIONES DE LOS ICONOS*/
+    .box-topicos .box-texto-imagen {
+        width: 100%;
+        height: auto;
+        font-size: 1.3rem;
+        margin-top: 0.625rem;
+    }
+
+
+    /*-------------------*SECCION NOVEDADES*------------------------------*/
+
+
+    /*ESTILOS A CONTENEDOR GENERAL DE LA SECCION NOVEDADES*/
+    .novedades {
+        height: 30rem;
+    }
+
+
+    /*MASCARA AZUL PARA HACER LA UNICA DIAGONAL DE LA SECCION NOVEDADES*/
+   
+    .mascara-diagonal-2 {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 25%);
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    }
+
+    .novedades span {
+        width: 100%;
+        height: auto;
+        font-size: 2.8rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .novedades .boton-2 {
+        height: 3.5rem;
+        width: 23.96rem;
+        font-size: 1.12rem;
+        margin-top: 1.40rem;
+    }
+
+
+    /*------------------Footer-----------------------------------*/
+
+    /*CONTENDOR  DEL SPAN - TEXTO DEL FOOTER*/
+    .texto-pie {
+        margin-left: 3.90rem;
+    }
+
+    /*CONTENEDOR DE ICONOS SOCIALES*/
+    .box-iconos-footer {
+        margin-right: 3.90rem;
+    }
+
+}
+
+/*-----------------------------------------------------------------------------
+----------------------------MEDIA DE 1070PX A 1169PX----------------------------
+-------------------------------------------------------------------------------*/
+
+
+@media screen and (min-width:1070px) and (max-width: 1169px) {
+
+    /*--------------Seccion Episodios----------------------*/
+
+    .caja-episodio {
+        height: 55rem;
+    }
+
+    .caja-episodio span{
+        margin-top:10%;
+    }
+     
+    .box-podcast iframe {
+        width: 30rem;
+        height: 15rem;
+        margin-left: 1.56%;
+        margin-right: 1.56%;
+        margin-top: 1.56%;
+        margin-bottom: 1.56%;
+    }
+
+    /*----------------------------------SECCION NOSOTROS------------------------*/
+
+    .box-phone {
+        width: 25rem;
+        height: 34rem;
+        position: relative;
+        top: -18%;
+        margin-left: 12%;
+    }
+
+    .nosotros .nos-titulo {
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .nosotros .nos-desc {
+        padding-right: 4px;      
+        margin-left: 4rem;
+    }
+
+    /*----------------------------------SECCION invitados------------------------*/
+
+    .invitados img {
+        width: 33.33%;
+        height: auto;
+    }
+
+    .invitados p {
+        width: auto;
+        margin-top: 6rem;
+    }   
+
+    /*-----------------------------------SECCION TEMAS---------------------------*/
+
+    .titulo-top {
+        width: auto;
+    }
+}
+
+/*-----------------------------------------------------------------------------
+----------------------------MEDIA DE 1170PX A 1440PX----------------------------
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1440px) {
+    
+    .invitados .fotos-invitados {
+        height: auto;
+      }
+  
+    .invitados img {
+       height: auto;
+    }
+
+}
