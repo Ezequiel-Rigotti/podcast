@@ -169,8 +169,8 @@
     /*Estilos para foto phone de seccion nosotros*/
 
     .nosotros .phone { 
-        width: 380px;
-        height: 660px;
+        width: 320px;
+        height: 600px;
         /*32.44rem;/*519px*/
         position: relative;
         top: -13.5rem;
