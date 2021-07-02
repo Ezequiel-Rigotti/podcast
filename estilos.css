@@ -92,6 +92,7 @@
     right: 0;
     transition: all 0.5s ease;
     overflow-y: hidden;
+    text-decoration: none;
 }
 
 /*ESTILOS PARA UL LI DEL MENU*/
@@ -393,8 +394,7 @@ input:checked~label .ham-3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     margin-top: 3.5rem;
 }
 
