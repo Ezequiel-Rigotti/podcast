@@ -19,8 +19,7 @@
 
 .nav-escritorio {
     width: 100%;
-    height: 5rem;
-    float: right;
+    height: 5rem;    
     margin-right: 6.94%;
 }
 
@@ -33,8 +32,15 @@
     margin-top: 1.52%;
 }
 
+.nav-escritorio ul{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+
 /*Estilos para la lista desordenada + ubicacion derecha en la cabecera*/
 .nav-escritorio ul li {
+  
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
@@ -43,10 +49,9 @@
     letter-spacing: 0;
     line-height: 1.75rem;
     display: inline;
-    float: right;
     cursor: pointer;
     margin-top: 1.625rem;
-    margin-left: 3.33%;
+    margin-left: 5%;
 }
 
 .nav-escritorio ul li :hover {
@@ -203,7 +208,7 @@ input:checked~label .ham-3 {
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
-    line-height: 1, 5rem;
+    line-height: 1,5rem;
     border: none;
     margin-left: 13.88%;
     margin-top: 3.88%;
@@ -316,7 +321,7 @@ input:checked~label .ham-3 {
 
 .nosotros .nos-desc {
     width: 29rem;
-    height: 12.75;
+    height: 12.75rem;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
     color: #060A24;
