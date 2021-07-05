@@ -11,19 +11,22 @@
 /*---------------------SECCION CABECERA--------------------------------*/
 
 @media screen and (max-width: 899px) {
-
+    .cabecera{
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+    }
     
     /*contenedor principa de la cabecera - nav y logo*/
     .nav-escritorio {
-        visibility: hidden;
-        margin-right:0;
+        display: none;
     }
 
+    
     /* Estilo para el logo bd*/
     .cabecera img {
         width: 1.5rem;
         height: 1.5rem;
-        float: left;
         margin-left: 5%;
         margin-top: 0.62rem;
     }
@@ -35,9 +38,8 @@
         width: 0.875rem;
         height: 0.875rem;
         margin-top: 1.13rem;
-        margin-bottom: 0;
-        margin-right:15px ;
-        display: block;
+        margin-right: 1.19rem; 
+        display: inline-block;
     }
 
     /*mantiene el menu escondido si no se presiona menu hamburguesa*/
