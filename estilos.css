@@ -239,6 +239,8 @@ input:checked~label .ham-3 {
 }
 
 .caja-episodio h1 {
+    width: 13.06rem;
+    height:3.875rem ;
     margin-top: 12.91%;
     margin-left: 13.88%;
     font-family: 'IBM Plex Sans', sans-serif;
